@@ -33,10 +33,10 @@ public class AEHostedURLsValidation {
 
 		public static void main(String[] args) throws InvalidFormatException, IOException, InterruptedException {
 			
-			System.setProperty("webdriver.chrome.driver", "C:/SCS/Ananth/AEHostedURLsValidation/Driver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/rajasekhar/git/AEHostedURLsValidation/AEHostedURLsValidation/Driver/chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			
-			FileInputStream fis = new FileInputStream("C:/SCS/Ananth/AEHostedURLsValidation/HostedURLs.xlsx");
+			FileInputStream fis = new FileInputStream("C:/Users/rajasekhar/git/AEHostedURLsValidation/AEHostedURLsValidation/HostedURLs.xlsx");
 			Workbook w = WorkbookFactory.create(fis);
 			Sheet s = w.getSheet("AEProductInstances");
 			
@@ -164,7 +164,7 @@ public class AEHostedURLsValidation {
 		             
 		     	       
 		        
-		        FileOutputStream fos = new FileOutputStream("C:/SCS/Ananth/AEHostedURLsValidation/HostedURLs.xlsx");
+		        FileOutputStream fos = new FileOutputStream("C:/Users/rajasekhar/git/AEHostedURLsValidation/AEHostedURLsValidation/HostedURLs.xlsx");
 		        w.write(fos);
 		        fos.close();
 		        
